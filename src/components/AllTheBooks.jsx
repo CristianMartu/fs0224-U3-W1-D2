@@ -16,7 +16,7 @@ class AllTheBooks extends Component {
     return (
       <Container>
         <ButtonGroup className="mt-2">
-          <DropdownButton as={ButtonGroup} title="Genre" id="bg-nested-dropdown">
+          <DropdownButton as={ButtonGroup} title="Category" id="bg-nested-dropdown">
             <Dropdown.Item eventKey="1" onClick={() => this.setState({ genre: fantasy })}>
               Fantasy
             </Dropdown.Item>
