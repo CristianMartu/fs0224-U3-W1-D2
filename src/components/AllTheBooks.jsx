@@ -35,9 +35,9 @@ class AllTheBooks extends Component {
           </DropdownButton>
         </ButtonGroup>
 
-        <h2 className="text-center">
+        <h1 className="text-center">
           EpiBooks: <span className="fw-normal">{this.state.genre[0].category}</span>
-        </h2>
+        </h1>
         <Row className="justify-content-center mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 row-gap-3">
           {this.state.genre.map((book) => {
             return (
