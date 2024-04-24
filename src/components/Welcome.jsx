@@ -1,11 +1,9 @@
-// import { Alert } from 'bootstrap'
-
-import { Container } from 'react-bootstrap'
+import { Alert } from 'react-bootstrap'
 
 const Welcome = () => (
-  <Container className="alert alert-primary p-3 my-2 text-center">
+  <Alert variant="dark" className="p-3 my-2 text-center">
     <h3>Welcome to EpiBooks!</h3>
-  </Container>
+  </Alert>
 )
 
 export default Welcome

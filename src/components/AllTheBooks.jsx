@@ -16,7 +16,7 @@ class AllTheBooks extends Component {
     return (
       <Container>
         <ButtonGroup className="mt-2">
-          <DropdownButton as={ButtonGroup} title="Category" id="bg-nested-dropdown">
+          <DropdownButton as={ButtonGroup} title="Category" id="bg-nested-dropdown" variant="dark">
             <Dropdown.Item eventKey="1" onClick={() => this.setState({ genre: fantasy })}>
               Fantasy
             </Dropdown.Item>
@@ -43,9 +43,17 @@ class AllTheBooks extends Component {
             return (
               <Col key={book.asin}>
                 <Card>
-                  <Card.Img loading="lazy" variant="top" src={book.img} className="w-100 d-block" style={{ aspectRatio: 1 / 1 }} />
+                  <Card.Img
+                    loading="lazy"
+                    variant="top"
+                    src={book.img}
+                    className="w-100 d-block"
+                    style={{ aspectRatio: 1 / 1 }}
+                  />
                   <Card.Body>
-                    <Card.Title style={{ minHeight: '5rem', lineHeight: '1.2rem', fontSize: '1.2rem' }}>{book.title}</Card.Title>
+                    <Card.Title style={{ minHeight: '5rem', lineHeight: '1.2rem', fontSize: '1.2rem' }}>
+                      {book.title}
+                    </Card.Title>
                     <div className="d-flex justify-content-between">
                       <Card.Text>{book.category}</Card.Text>
                       <Badge className="align-self-start p-2">{book.price}</Badge>
